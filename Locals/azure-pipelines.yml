@@ -74,13 +74,14 @@ stages:
           steps:
 
           - task: UsePythonVersion@0
+            displayName: 'Use Python version'
             inputs:
               versionSpec: '$(pythonVersion)'
-            displayName: 'Use Python version'
 
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App : python-flask-ml'
             inputs:
+              appType: 'webAppLinux'
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
-              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip         

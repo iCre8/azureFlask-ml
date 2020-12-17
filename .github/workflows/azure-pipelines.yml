@@ -4,7 +4,7 @@ Cre8.azureFlask-ml# Python to Linux Web App on Azure
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
-- master
+- main
 
 variables:
   # Azure Resource Manager connection created during pipeline creation

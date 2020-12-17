@@ -1,9 +1,9 @@
 setup:
-	python3 -m venv ~/.azure-flask-ml
+	python -m venv ~/.azure-flask-ml
 
 install:
 	pip install --upgrade pip &&\
-		pip install --no-cache-dir -r requirements.txt
+		pip --no-cache-dir install -r requirements.txt
 
 test:
 	#python -m pytest -vv --cov=myrepolib tests/*.py
@@ -11,7 +11,6 @@ test:
 
 
 lint:
-	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
-	pylint --disable=R,C,W1203 app.py
+	pylint --disable=R,C app.py
 
-all: install lint test
+all: install lint

@@ -81,6 +81,6 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App : flask-ml-app'
             inputs:
-              publish-profiele: ${{ secrets.AzureAppService_PublishProfile_4a025f8353bc415d8ed596accab97025 }}
+              azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip

@@ -69,7 +69,7 @@ stages:
             displayName: 'Deploy Azure Web App : python-flask-ml'
             inputs:
               appType: 'webAppLinux'
-              azureSubscription: c2669e0a-34a5-40d0-a3c3-08858cb49a53)
+              azureSubscription: c2669e0a-34a5-40d0-a3c3-08858cb49a53
               appName: $(webAppName)
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip         
           

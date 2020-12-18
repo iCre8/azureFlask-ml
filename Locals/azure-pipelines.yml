@@ -10,13 +10,13 @@ variables:
   azureServiceConnectionId: 'c2669e0a-34a5-40d0-a3c3-08858cb49a53'
 
   # Web app name
-  webAppName: 'python-flask-ml'
+  webAppName: 'flask-ml-app'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'python-flask-ml'
+  environmentName: 'flask-ml-ap'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
@@ -46,6 +46,19 @@ stages:
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
 
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(projectRoot)'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+
+    - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      displayName: 'Upload package'
+      artifact: drop
+
 - stage: Deploy
   displayName: 'Deploy Web App'
   dependsOn: Build
@@ -61,27 +74,13 @@ stages:
           steps:
 
           - task: UsePythonVersion@0
-            displayName: 'Use Python version'
             inputs:
               versionSpec: '$(pythonVersion)'
+            displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : python-flask-ml'
+            displayName: 'Deploy Azure Web App : flask-ml-app'
             inputs:
-              appType: 'webAppLinux'
-              azureSubscription: c2669e0a-34a5-40d0-a3c3-08858cb49a53
+              azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
-              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip         
-          
-          - task: ArchiveFiles@2
-            displayName: 'Archive files'
-            inputs:
-              rootFolderOrFile: '$(projectRoot)'
-              includeRootFolder: false
-              archiveType: zip
-              archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-              replaceExistingArchive: true
-
-          - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-            displayName: 'Upload package'
-            artifact: drop
+              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip

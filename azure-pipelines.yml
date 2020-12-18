@@ -84,6 +84,7 @@ stages:
             displayName: 'Deploy Azure Web App : flask-ml-app'
             inputs:
               azureSubscription: ${{azureServiceConnectionId}}
+              appType: webAppLinux
               WebappName: ${{webAppName}}
               RuntimeStack: 'PYTHON:3.7'
               package: ${{Pipeline.Workspace}}/drop/${{Build.BuildId}}.zip

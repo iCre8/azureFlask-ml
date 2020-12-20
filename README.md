@@ -1,5 +1,6 @@
 # Overview
 ![Python application test with Github Actions](https://github.com/iCre8/azureFlask-ml/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
+
 <TODO: complete this with an overview of your project>
 
 ## Project Plan

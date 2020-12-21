@@ -71,10 +71,10 @@ This project is broken up into multiple technological disciplines DevOps being t
 ![az webapp up](./imgs/azWebAppUp.png)
 
 ### Step 14 - 15: Browse to Application in Azure Portal
-![Project home page](./imgs/flask-ml-app-homeage.png)
+![Project home page](./imgs/flask-ml-app-homepage.png)
 
 ### Step 16 - 18: Make predict execution in Azure Cloud Shell
-![File Execution Results](./make_predict_results.png)
+![File Execution Results](./imgs/make_predict_results.png)
 
 ## Application Enhancements
 1. Create a user input to allow users to enter values 

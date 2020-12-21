@@ -77,10 +77,12 @@ This project is broken up into multiple technological disciplines DevOps being t
 ![File Execution Results](./imgs/make_predict_results.png)
 
 ## Application Enhancements
-1. Create a user input to allow users to enter values 
-2. Add about us or about app page to educate the user 
-3. Allow multiple data types selection for the prediction algorithm 
-4. Use predicition alogorithm backend to remove script dependancies 
+1. Create a user input field to allow users to enter values 
+2. Add HTML5 & CSS3 formatting to pages to center the input field 
+3. Add Descriptive Text to explain the project details with optional github links
+4. Add about us or about app page to educate the user 
+5. Allow multiple data types selection for the prediction algorithm 
+6. Use predicition alogorithm backend to remove script dependancies 
 
 ## Demo 
 

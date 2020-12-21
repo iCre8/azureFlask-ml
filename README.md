@@ -7,12 +7,12 @@ Project Planning tools includes Trello and Excel Spreadsheets for planning and e
 
 ## Project Plans 
 
-Azure Pipeline Project Trello (https://trello.com/b/6obahJRP/azure-piplines)
-Azure Pipeline Project Spreadsheet (https://docs.google.com/spreadsheets/d/1PCDJgYve5tpazcsaU8GRSRarUgYvU2487QDgchKcLRA/edit?usp=sharing)
+[Azure Pipeline Project Trello](https://trello.com/b/6obahJRP/azure-piplines)
+[Azure Pipeline Project Spreadsheet](https://docs.google.com/spreadsheets/d/1PCDJgYve5tpazcsaU8GRSRarUgYvU2487QDgchKcLRA/edit?usp=sharing)
 
 ## Instructions
-This project is broken up into multiple technological disciplines DevOps being the most overaching topic. 
-**Github** Actions is the build server that will run test on the code were building using pylint. 
+This project is broken up into multiple technological disciplines with DevOps being the most overaching topic. 
+**Github Actions** is the build server that will run test on the code were building using pylint. 
 **Azure Portal**, **Azure Cloud Shell** and **Azure CLI** is used to host the application service as well as the **Azure DevOps** Continuous Intergration and Continuous Delivery Pipline (CI/CD). 
 
 ### Project Architecture 

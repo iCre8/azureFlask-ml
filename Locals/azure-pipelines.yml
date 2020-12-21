@@ -12,7 +12,7 @@ variables:
   azureServiceConnectionId: 'Azure Subscription 1 (c2669e0a-34a5-40d0-a3c3-08858cb49a53)'
 
   # Web app name
-  webAppName: 'flask-ml'
+  webAppName: 'flask-ml-demo'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'

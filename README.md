@@ -16,7 +16,7 @@ This project is broken up into multiple technological disciplines DevOps being t
 **Azure Portal**, **Azure Cloud Shell** and **Azure CLI** is used to host the application service as well as the **Azure DevOps** Continuous Intergration and Continuous Delivery Pipline (CI/CD). 
 
 ### Project Architecture 
-![Architecture Diagram](./imgs/CI_CD_Github_Azurepipeline.png)
+![Architecture Diagram](./imgs/CI_CD_Github_AzurePipeline.png)
 
 ### Getting Started
 

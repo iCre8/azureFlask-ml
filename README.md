@@ -1,5 +1,10 @@
 # Overview
+
+## Github Action 
 ![Python application test with Github Actions](https://github.com/iCre8/azureFlask-ml/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
+
+## Azure Pipeline
+[![Build Status](https://dev.azure.com/iCre8/Flask%20App/_apis/build/status/iCre8.azureFlask-ml-app?branchName=main)](https://dev.azure.com/iCre8/Flask%20App/_build/latest?definitionId=17&branchName=main)
 
 Azure Cloud Shell environment and that build, test, deploy, a Python Flask Machine Learning application. The project uses Flask, sklearn, Makefile, azure-pipelines, github actions and locustFile testing tool.
 

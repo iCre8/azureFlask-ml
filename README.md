@@ -3,8 +3,8 @@
 ## Github Action 
 ![Python application test with Github Actions](https://github.com/iCre8/azureFlask-ml/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
 
-## Azure Pipeline
-![Azure Pipeline](https://dev.azure.com/iCre8/Flask%20App/_apis/build/status/iCre8.azureFlask-ml-app?branchName=main)](https://dev.azure.com/iCre8/Flask%20App/_build/latest?definitionId=17&branchName=main)
+## Azure Pipeline Status 
+![Azure Pipeline Build Actions](https://github.com/iCre8/azureFlask-ml/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
 
 Azure Cloud Shell environment and that build, test, deploy, a Python Flask Machine Learning application. The project uses Flask, sklearn, Makefile, azure-pipelines, github actions and locustFile testing tool.
 
@@ -13,6 +13,7 @@ Project Planning tools includes Trello and Excel Spreadsheets for planning and e
 ## Project Plans 
 
 [Azure Pipeline Project Trello](https://trello.com/b/6obahJRP/azure-piplines)
+
 [Azure Pipeline Project Spreadsheet](https://docs.google.com/spreadsheets/d/1PCDJgYve5tpazcsaU8GRSRarUgYvU2487QDgchKcLRA/edit?usp=sharing)
 
 ## Instructions

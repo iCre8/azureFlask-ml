@@ -70,7 +70,7 @@ This project is broken up into multiple technological disciplines with DevOps be
 ### Step 11.3: Build Deployment Azure Pipeline in Azure DevOps Organization
 ![Build Deployment Pipeline](./imgs/CI_CD_Pipeline.png)
 
-### Step 12: Make All 
+### Step 12: Make Install 
 ![Make Install](./imgs/makeInstall.png)
 
 ### Make All Results

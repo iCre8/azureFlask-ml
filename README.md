@@ -70,8 +70,10 @@ This project is broken up into multiple technological disciplines with DevOps be
 ### Step 11.3: Build Deployment Azure Pipeline in Azure DevOps Organization
 ![Build Deployment Pipeline](./imgs/CI_CD_Pipeline.png)
 
-### Step 12: Azure Cloud Shell
+### Step 12: Azure Cloud Shell & Make All Results 
 ![Make Install](./imgs/makeInstall.png)
+
+![Make All](./imgs/make_all_results.png)
 
 ### Step 13: Azure WebApp in Azure Cloud Shell
 ![az webapp up](./imgs/azWebAppUp.png)
@@ -81,6 +83,9 @@ This project is broken up into multiple technological disciplines with DevOps be
 
 ### Step 16 - 18: Make predict execution in Azure Cloud Shell
 ![File Execution Results](./imgs/make_predict_results.png)
+
+### Successful Pipeline Deployment 
+![Azure Pipeline Deployment](./imgs/successful_deployment)
 
 ## Application Enhancements
 1. Create a user input field to allow users to enter values 

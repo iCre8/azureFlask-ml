@@ -68,5 +68,11 @@ def predict():
     prediction = list(clf.predict(scaled_payload))
     return jsonify({'prediction': prediction})
 
+@app.route("/secondary_router")
+def other_router():
+    html = "<h1> Happy Routing </h1> 
+    return html.format(format)
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)

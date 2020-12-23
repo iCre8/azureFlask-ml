@@ -5,11 +5,12 @@ class index_loaded(HttpUser):
     wait_time = between(5, 15)
 
     def on_start(self): 
-        self.client.post("/login", {
-            "username" : "test_user", 
-            "password" : "" 
-            })
+        self.client.get("https://flask-ml-demo.azurewebsites.net")
 
     @task
-    def index_page(self):
-        self.client.get("/")
+    def prediction(self):
+        self.client.post("/secondary_router")
+
+    @task
+    def run_predict(self): 
+        self.client.get("/predict")

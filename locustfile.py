@@ -1,7 +1,7 @@
-from locust import HttpLocust, task, between 
+from locust import HttpUser, task, between 
 
 
-class index_loaded(HttpLocust): 
+class index_loaded(HttpUser): 
     wait_time = between(5, 15)
 
     def on_start(self): 

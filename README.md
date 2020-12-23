@@ -52,7 +52,7 @@ This project is broken up into multiple technological disciplines with DevOps be
     **For official documentation on setting up your Pipeline see** 
   [Azure Pipeline CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 12. run `make install` 
-13. run `az webapp up -n <your-webapp-name>
+13. run `az webapp up -n <your-webapp-name>`
 14. Navigate to the url out `http://<your-app-name>.asurewebsites.net`
 15. You should see changes made to the title heading in the output
 16. Navigate back to the the **Azure Cloud Shell** 

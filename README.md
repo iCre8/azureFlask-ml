@@ -70,9 +70,10 @@ This project is broken up into multiple technological disciplines with DevOps be
 ### Step 11.3: Build Deployment Azure Pipeline in Azure DevOps Organization
 ![Build Deployment Pipeline](./imgs/CI_CD_Pipeline.png)
 
-### Step 12: Azure Cloud Shell & Make All Results 
+### Step 12: Make All 
 ![Make Install](./imgs/makeInstall.png)
 
+### Make All Results
 ![Make All](./imgs/make_all_results.png)
 
 ### Step 13: Azure WebApp in Azure Cloud Shell

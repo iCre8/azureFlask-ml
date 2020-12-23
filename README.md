@@ -85,7 +85,7 @@ This project is broken up into multiple technological disciplines with DevOps be
 ![File Execution Results](./imgs/make_predict_results.png)
 
 ### Successful Pipeline Deployment 
-![Azure Pipeline Deployment](./imgs/successful_deployment)
+![Azure Pipeline Deployment](./imgs/successful_deployment.png)
 
 ### Locust Test Results 
 ![LocustFile.py Results](./imgs/locustFileScreenShot.png)

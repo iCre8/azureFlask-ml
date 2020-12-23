@@ -42,7 +42,8 @@ This project is broken up into multiple technological disciplines with DevOps be
 10. Navigate the the cloned repository you created, open the app.py file
 11. With app.py open located the `@app.route("/") function and change the text in between the html <h3> tags` and save the file 
     11.1 Run 
-    ```git add . 
+    ```
+       git add . 
        git commit -m "i-changed-stuff"
        git push
     ```

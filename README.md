@@ -4,8 +4,6 @@
 ![Python application test with Github Actions](https://github.com/iCre8/azureFlask-ml/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
 
 ## Azure Pipeline Status 
-<ToDo>
-
 Azure Cloud Shell environment and that build, test, deploy, a Python Flask Machine Learning application. The project uses Flask, sklearn, Makefile, azure-pipelines, github actions and locustFile testing tool.
 
 Project Planning tools includes Trello and Excel Spreadsheets for planning and execution of project deliverables.

@@ -55,7 +55,7 @@ def predict():
 
     try:
         clf = joblib.load("boston_housing_prediction.joblib")
-    except Exception as e:
+    except OSError as e:
         LOG.error("Failed to load model: %s", str(e))
         return jsonify({'error': 'Model not loaded'}), 500
 

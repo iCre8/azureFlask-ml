@@ -3,7 +3,7 @@ import logging
 from flask.logging import create_logger
 
 import pandas as pd
-from sklearn.externals import joblib
+import joblib
 from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
@@ -13,7 +13,7 @@ LOG.setLevel(logging.INFO)
 def scale(payload):
     """Scales Payload"""
 
-    LOG.info("Scaling Payload: %s payload")
+    LOG.info("Scaling Payload")
     scaler = StandardScaler().fit(payload)
     scaled_adhoc_predict = scaler.transform(payload)
     return scaled_adhoc_predict
@@ -23,7 +23,6 @@ def home():
     html = "<h3> Prediction Home</h3>"
     return html.format(format)
 
-# TO DO:  Log out the prediction value
 @app.route("/predict", methods=['POST'])
 def predict():
     """Performs an sklearn prediction
@@ -56,16 +55,24 @@ def predict():
 
     try:
         clf = joblib.load("boston_housing_prediction.joblib")
-    except:
-        LOG.info("JSON payload: %s json_payload")
-        return "Model not loaded"
+    except Exception as e:
+        LOG.error("Failed to load model: %s", str(e))
+        return jsonify({'error': 'Model not loaded'}), 500
 
     json_payload = request.json
-    LOG.info("JSON payload: %s json_payload")
+    if not json_payload:
+        return jsonify({'error': 'Empty payload'}), 400
+    
     inference_payload = pd.DataFrame(json_payload)
-    LOG.info("inference payload DataFrame: %s inference_payload")
+    if inference_payload.empty:
+        return jsonify({'error': 'Invalid payload'}), 400
+    
+    LOG.info("JSON payload received")
+    inference_payload = pd.DataFrame(json_payload)
+    LOG.info("Inference payload DataFrame created: %s", inference_payload.shape)
     scaled_payload = scale(inference_payload)
     prediction = list(clf.predict(scaled_payload))
+    LOG.info("Prediction: %s", prediction)
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
